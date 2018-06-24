@@ -18,15 +18,15 @@ public class DisplayAccountServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = (int) req.getAttribute("accountId");
         logger.info("Post Account info " + id);
         logger.info("Post Account info " + repository.findById(id).toString());
         req.getRequestDispatcher("DisplayAccountView.jsp").forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
 
     }
 }
