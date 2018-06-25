@@ -14,15 +14,6 @@ public class Account {
 
     private String telephone;
 
-    private String country;
-
-    private String Region;
-
-    private String city;
-
-    private String street;
-
-
     public Account() {
 
     }
@@ -75,38 +66,6 @@ public class Account {
         this.telephone = telephone;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getRegion() {
-        return Region;
-    }
-
-    public void setRegion(String region) {
-        Region = region;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -131,9 +90,6 @@ public class Account {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", telephone='" + telephone + '\'' +
-                ", city='" + city + '\'' +
-                ", street='" + street + '\'' +
-                ", country='" + country + '\'' +
                 '}';
     }
 }

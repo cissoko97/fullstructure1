@@ -6,6 +6,7 @@
         <webroots>
           <root url="file://E:\java\IdeaProjects\fullstructure\src\main\webapp" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -24,6 +25,7 @@
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-log4j12:1.8.0-beta0" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.8.0-beta0" level="project" />
     <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.194" level="project" />
+    <orderEntry type="library" name="Gradle: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-jsp-api:9.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-util-scan:9.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-api:9.0.1" level="project" />

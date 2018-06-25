@@ -7,6 +7,7 @@ apply plugin: 'war'
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
     mavenLocal()
 }
@@ -25,4 +26,7 @@ dependencies {
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.8.0-beta0'
 
     compile group: 'com.h2database', name: 'h2', version: '1.4.194'
+    // https://mvnrepository.com/artifact/jstl/jstl
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+
 }
