@@ -12,7 +12,15 @@ public class Account {
 
     private String password;
 
-    private String telephone;
+    private String phone;
+
+    private String country;
+
+    private String Region;
+
+    private String city;
+
+    private String street;
 
     public Account() {
 
@@ -58,12 +66,44 @@ public class Account {
         this.password = password;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getRegion() {
+        return Region;
+    }
+
+    public void setRegion(String region) {
+        Region = region;
     }
 
     @Override
@@ -89,7 +129,10 @@ public class Account {
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", telephone='" + telephone + '\'' +
+                ", phone='" + phone + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", country='" + country + '\'' +
                 '}';
     }
 }

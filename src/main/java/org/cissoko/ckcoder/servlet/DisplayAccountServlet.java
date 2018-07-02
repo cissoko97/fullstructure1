@@ -1,5 +1,6 @@
 package org.cissoko.ckcoder.servlet;
 
+import org.cissoko.ckcoder.model.Account;
 import org.cissoko.ckcoder.repository.Repository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,15 +19,16 @@ public class DisplayAccountServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        logger.info("Post method are call");
+        String id = req.getParameter("accountId");
+        logger.info("Post Account info " + id);
+        Account account = repository.findById(Integer.valueOf(id));
+        req.setAttribute("account", account);
+        logger.info("Post Account info " + account.toString());
+        req.getRequestDispatcher("/DisplayAccountView.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = (int) req.getAttribute("accountId");
-        logger.info("Post Account info " + id);
-        logger.info("Post Account info " + repository.findById(id).toString());
-        req.getRequestDispatcher("DisplayAccountView.jsp").forward(req, resp);
-
     }
 }
